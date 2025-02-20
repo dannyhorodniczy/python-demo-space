@@ -1,0 +1,18 @@
+[tool.ruff] 
+line-length = 100
+ignore = ["D203"]
+show-source = true
+
+[tool.black] 
+line-length = 100 
+target-version = ['py39']
+
+[tool.pytest.ini_options] 
+addopts = "-ra --cov"
+testpaths = [
+    "tests/*",
+    "tests/leetcode/easy/*",
+    "tests/leetcode/medium/*",
+    "tests/leetcode/hard/*"
+] 
+pythonpath = ['.']
